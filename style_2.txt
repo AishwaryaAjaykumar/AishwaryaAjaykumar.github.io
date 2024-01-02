@@ -1,0 +1,120 @@
+/* Reset default box-sizing for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0; /* Resets margin */
+    padding: 0; /* Resets padding */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Adjust if you have a specific font in mind */
+    padding-top: 60px; /* Adjust the value to match the header's height */
+    background-color: #f7f7f7; /* Adjust the background color as needed */
+    color: #333333; /* Standard text color - change if needed */
+    line-height: 1.6; /* Adjust line height for readability */
+}
+
+header {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed; /* Changed from sticky to fixed */
+    top: 0;
+    width: 100%; /* Ensure the header spans the full width */
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0275d8; /* Color change on hover */
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px; /* Adjust padding to match your spacing requirements */
+    background-color: #C4D6E2; /* Light blue background */
+    /* Add more styles if needed */
+}
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+    font-size: 18px; /* Adjust font-size as per your design */
+    /* Add more styles if needed */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adjust as needed */
+    /* Add more styles if needed */
+}
+
+section h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 28px; /* Adjust the font size as per your design */
+    font-weight: bold; /* Makes the font bold */
+    margin-bottom: 0.5em; /* Adjust the space below the heading */
+    /* Add more styles if needed */
+}
+
+/* ... other styles ... */
+
+/* Skills section styles */
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust to match the spacing in your design */
+    /* Add more styles if needed */
+}
+
+.image-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px; /* Adjust to fit content */
+    /* Add more styles if needed */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    /* Add more styles if needed */
+}
+
+.image-title {
+    margin-top: 5px; /* Adjust to match the spacing in your design */
+    font-size: 14px; /* Adjust to match your design */
+    color: #333333; /* Text color for the title - change if needed */
+    /* Add more styles if needed */
+}
+
+/* ... other styles ... */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
