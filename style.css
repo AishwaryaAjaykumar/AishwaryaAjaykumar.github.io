@@ -49,12 +49,13 @@ nav a:hover {
 
 /* Add padding to the top of the body to ensure the fixed header doesn't overlap content */
 body {
-	overflow-x: hidden;
-	font-family: 'Roboto Slab', serif;
+overflow-x: hidden;
+font-family: 'Roboto Slab', serif;
     background-color: var(--background-light);
     color: var(--text-dark);
     margin: 0;
     padding-top: 60px;
+    width: 100%;
 }
 section {
 	width: 100%;
