@@ -105,38 +105,45 @@ section:nth-of-type(even) {
 }
 
 #about {
-	font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif;
     display: flex;
-    justify-content: space-between; /* Space between the text and image */
-    align-items: center; /* Align items vertically */
-    margin: auto; /* Centering the section */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for style */
-    padding: 20px; /* Adjusted to add padding around the grid */
+    flex-direction: row; /* Default to row, but will change on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
-#about .about-text {
-    flex: 1;
-    text-align: left; /* Align the text to the left */
-    margin-left: 150px; /* Use percentage for margins */
-    flex-basis: 45%; /* Adjust the basis for flexibility */
-}
-
-
-.about-image {
-    flex-basis: 45%; /* Set a fixed width for the image container */
-    display: flex;
-    flex-direction: column; /* Stack image and social media icons vertically */
-    align-items: center; /* Center image and icons in the container */
-	padding: 30px;
-	margin-right: 150px;
+#about .about-text, .about-image {
+    flex: 1 1 45%; /* Flex-grow, flex-shrink, flex-basis */
+    padding: 20px;
 }
 
 .about-image img {
-    width: 100%; /* Full width of the container */
-    max-width: 250px; /* Maximum width of the image */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners for the image */
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
 }
+
+/* Media Query for devices with width less than 800px */
+@media (max-width: 800px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .about-text, .about-image {
+        margin: 0 20px; /* Remove large fixed margins */
+        flex-basis: auto; /* Take the width needed */
+    }
+
+    .about-image {
+        order: -1; /* Image above text */
+    }
+}
+
 
 /* Style for social media icons */
 .social-media {
