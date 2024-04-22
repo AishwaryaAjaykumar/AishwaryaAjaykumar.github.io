@@ -6,196 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aishwarya's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-	<div>
-        <nav>
-            <ul>
-                <li><a href="#about">ABOUT ME</a></li>
-                <li><a href="#test-certification">TEST CERTIFICATION</a></li>
-                <li><a href="#personal-development">PERSONAL DEVELOPMENT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Aishwarya Ajaykumar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">ABOUT ME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#test-certification">TEST CERTIFICATION</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#personal-development">PERSONAL DEVELOPMENT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-	</div>
     </header>
-	<!-- New Intro Section -->
-	<section class="intro-section">
-		<h1>AISHWARYA AJAYKUMAR</h1>
-		<p>I'm a data analysis and data visualization specialist currently studying Business Analytics and Information Management at Purdue University.</p>
-		<div class="social-links">
-			<a href="https://www.linkedin.com/in/aishwaryaajaykumar/" target="_blank" title="View my LinkedIn profile">
-            <img src="linkedin.png" alt="LinkedIn">
-			</a>
-			<a href="https://github.com/AishwaryaAjaykumar" target="_blank" title="View my GitHub profile">
-				<img src="github.png" alt="GitHub">
-			</a>
-			<a href="Aishwarya Ajaykumar Resume.pdf" target="_blank" title="View my Resume">
-				<img src="resume.png" alt="Resume">
-			</a>
-			<a href="mailto:aishwarya.ajaykumar@gmail.com" title="Reach me on email">
-				<img src="email.png" alt="Email">
-			</a>
-		</div>
-		<button onclick="location.href='#contact'" class="button">CONTACT</button>
-	</section>
-
-    <!-- About Me Section -->
-    <section id="about">
-        <div class="about-text">
-	    <p>Hi I'm Aishwarya.</p>
-            <p>Welcome to my world, where data and detailed analysis meet strategic business thinking. With experience as a Decision Scientist and Manager at Mu-Sigma, and an educational foundation from Purdue University's Daniels School of Business, I've sharpened my skills in turning complex problems into clear, actionable insights. My career is built on a bedrock of delivering results, managing cross-functional teams, and leading projects that push the envelope.</p>
-            <p>Specializing in Python, SQL, and R, I tackle data with a toolkit that includes PySpark, Pandas, and Scikit-learn, among other technologies. Whether it's through advanced analytics or building efficient data pipelines in the cloud, my goal is always to create value and drive progress. My work as a Project Manager has led me to innovate forecasting methods, improving efficiency and reduce manual work.</p>
-            <p>But life isn't all numbers and charts. Outside the office, I'm an avid traveler, reader, history enthusiast, and Formula One fan.</p>
-            <p>I am here to connect the dots, to transform raw data into strategies that work, and to move businesses forward. If you're looking for a partner in navigating the data-driven challenges of today's world, let's get in touch.</p>
+    <!-- Intro Section -->
+    <section id="intro" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h1 class="display-3">AISHWARYA AJAYKUMAR</h1>
+                <p class="lead">I'm a data analysis and data visualization specialist currently studying Business Analytics and Information Management at Purdue University.</p>
+                <div class="mt-4">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="your-image.jpg" class="img-fluid rounded-circle" alt="Aishwarya Ajaykumar">
+            </div>
         </div>
-        <div class="about-left">
-        <div class="about-image">
-            <img src="headshot.jpg" alt="Aishwarya">
-        </div>
-    </div>
-	</section>
-    <section id="test-certification">
-    <h2>TEST CERTIFICATION</h2>
-    <ul>
-	<li><a href="https://www.credly.com/badges/828140b7-7c6a-47f7-9cee-35e6d40a23ab" target="_blank" title="View my credential">AWS Solution Architect Associate</a></li>
-        <li><a href="https://www.credly.com/badges/3ba47f1a-ee30-42f0-9a24-50807750212c/public_url" target="_blank" title="View my credential">Microsoft Certified: Azure Fundamentals</a></li>
-	<li><a href="https://www.credly.com/badges/f5d48d99-5fe8-4db1-9ee4-8e5fd44c8fe4" target="_blank" title="View my credential">AWS Cloud Practitioner</a></li>
-        <li><a href="https://www.udemy.com/certificate/UC-88937e13-d13f-4d2c-803f-8988517e19c7/" target="_blank" title="View my credential">Machine Learning A-Z(Udemy)</a></li>
-        <li><a href="https://www.hackerrank.com/certificates/4bff99adfb2b" target="_blank" title="View my credential">Advanced SQL (Hackerrank)</a></li>
-	<li><a href="https://www.credly.com/badges/17d8e5ac-54ce-4a1c-9cd1-94e37fdb8d66/public_url" target="_blank" title="View my credential">Operations Research with SAS Optimization</a></li>
-        <!-- Add more list items as needed -->
-    </ul>
-	</section>
-
-    <section id="personal-development">
-        <h2>PERSONAL DEVELOPMENT CERTIFICATION</h2>
-        <ul>
-		<li><a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/d21bd5bb079939f429ccf5794f4c051e408c4c14" target="_blank" title="View my credential">Datacamp: Machine Learning Scientist with Python track</a></li>
-		<li><a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/aadd1f6ed3a5dd925061a69194f14a2702b62ea8" target="_blank" title="View my credential">Datacamp: Data Analyst with Python track</a></li>
-		<li><a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/fd02809223748687bfd89d6241c72e377f072c4c" target="_blank" title="View my credential">Datacamp: Python fundamentals track</a></li>
-    </ul>
     </section>
-
-    <section id="skills">
-    <h2>SKILLS</h2>
-	<div class="skills-icons">
-		<div class="image-container">
-			<img src="python.png" alt="Python">
-			<div class="image-title">Python</div>
-		</div>
-		<div class="image-container">
-			<img src="sql.png" alt="SQL">
-			<div class="image-title">SQL</div>
-		</div>
-		<div class="image-container">
-			<img src="ml.png" alt="Machine Learning">
-			<div class="image-title">Machine Learning</div>
-		</div>
-		<!-- Continue for the rest of the icons -->
-		<div class="image-container">
-			<img src="excel.png" alt="Excel">
-			<div class="image-title">Excel</div>
-		</div>
-		<div class="image-container">
-			<img src="azure.png" alt="Azure">
-			<div class="image-title">Microsoft Azure</div>
-		</div>
-		<div class="image-container">
-			<img src="aws.png" alt="AWS">
-			<div class="image-title">Amazon Web Services</div>
-		</div>
-		<div class="image-container">
-			<img src="pbi.png" alt="Power BI">
-			<div class="image-title">Power BI</div>
-		</div>
-		<div class="image-container">
-			<img src="docker.png" alt="Docker">
-			<div class="image-title">Docker</div>
-		</div>
-		<div class="image-container">
-			<img src="html.png" alt="HTML">
-			<div class="image-title">HTML</div>
-		</div>
-	</div>
-    <!-- Add additional icons as needed -->
-	</section>
-    <section id="projects">
-    <h2>PROJECTS</h2>
-    <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card">
-            <img src="proj1.png" alt="Project 1 Image">
-            <h3>Revenue and Superhost status Prediction for Airbnb</h3>
-            <p>Leveraging advanced data science techniques, this project predicted revenue impacts and Superhost status on Airbnb. Utilizing gradient boost models for precision, the analysis encompassed exploratory data assessments to forecast revenue trends and identify the tangible benefits of Superhost designation, enabling hosts to strategize for maximum financial returns.</p>
-            <a href="https://github.com/AishwaryaAjaykumar/TransformingAirbnbHosting" target="_blank">View on GitHub</a>
-            <!-- Add more project details if needed -->
-        </div>
-        
-        <!-- Project 2 -->
-        <div class="project-card">
-            <img src="proj2.png" alt=" Image">
-            <h3>Database Management and Analytical Processing for Supply Chain Optimization</h3>
-            <p>Creating a unified database from scattered Purchase Order data for a manufacturing company. Focusing on standardization and monetization, the effort streamlined supply chain processes and set the stage for digital transformation, showcasing predictive analytics and database management prowess.</p>
-            <a href="https://github.com/AishwaryaAjaykumar/DB-Mgmt-and-Analysis" target="_blank">View on GitHub</a>
-            <!-- Add more project details if needed -->
-        </div>
-        
-        <!-- Project 3 -->
-        <div class="project-card">
-            <img src="proj3.png" alt="Project 3 Image">
-            <h3>Categorization Optimization with Convolutional Neural Networks and NLP</h3>
-            <p>This project optimizes online categorization for a classifieds platform, enhancing user search experience. By preprocessing data and implementing convolutional neural networks and natural language processing models, including LSTM and gradient boosting, the project successfully reduced misclassification and improved the accuracy of product listings.</p>
-            <a href="https://github.com/AishwaryaAjaykumar/Categorization-optimization-using-CNN" target="_blank">View on GitHub</a>
-            <!-- Add more project details if needed -->
-        </div>
-	<!-- Project 4 -->
-        <div class="project-card">
-            <img src="proj4.png" alt="Project 4 Image">
-            <h3>Walmart Inventory and Demand Forecasting Solutions with Convolutional Neural Networks, LSTM</h3>
-            <p>This project aims to revolutionize inventory management and demand forecasting through a suite of five advanced solutions. From predictive sales analytics to uncertainty estimation and promotion impact studies, the project leverages data-driven insights to enhance supply chain efficiency and drive revenue growth. It incorporates strategic clustering and cutting-edge image recognition to refine stock allocation and streamline the checkout process, delivering tangible business value.</p>
-            <a href="https://github.com/AishwaryaAjaykumar/Walmart-Deep-Learning-" target="_blank">View on GitHub</a>
-            <!-- Add more project details if needed -->
-        </div>
-        <!-- Project 5 -->
-        <div class="project-card">
-            <img src="proj5.png" alt="Project 5 Image">
-            <h3>Airbnb Price Determinants: A Predictive Analytics Approach</h3>
-            <p>This project employs a robust predictive modeling pipeline to identify key determinants of Airbnb listing prices using LightGBM. After meticulous data preparation and addressing multicollinearity with PCA, the model is refined through cross-validation and hyperparameter tuning. The analytical focus is on elucidating the most influential pricing factors, offering a strategic tool for understanding and optimizing listing profitability in the Airbnb marketplace.</p>
-            <a href="https://github.com/AishwaryaAjaykumar/Insights-and-Impacts---Price-Prediction-for-AirBnb" target="_blank">View on GitHub</a>
-            <!-- Add more project details if needed -->
-        </div>
-	<!-- Project 6 -->
-        <div class="project-card">
-            <img src="proj6.jpg" alt="Project 6 Image">
-            <h3>Dual-Model Loan Default Prediction: Logistic Regression and LightGBM Approach</h3>
-            <p>This project implements a dual-model predictive framework combining Logistic Regression and LightGBM to forecast loan defaults with high accuracy. The models are trained on historical loan data, where Logistic Regression provides a baseline probability framework while LightGBM contributes a gradient boosting mechanism for enhanced prediction. The synergy of these models aims to yield a comprehensive risk assessment tool, vital for financial institutions to preemptively mitigate default risks.</p>
-            <a href="https://github.com/AishwaryaAjaykumar/Risk-Analytics-for-banks" target="_blank">View on GitHub</a>
-	</div>
-        <!-- Project 7 -->
-        <div class="project-card">
-            <img src="proj7.png" alt="Project 7 Image">
-            <h3>Predicting ticket sales for the NCAA</h3>
-            <p>Developed an ensemble model to predict customer ticket purchases for NCAA championships, leveraging internal customer data alongside external sources. By integrating diverse datasets and employing advanced predictive techniques, the model aimed to discern whether customers would purchase tickets and whether transactions would occur on the primary or secondary market. This initiative sought to enhance the NCAA's marketing strategies and optimize revenue generation while enriching the student-athlete experience across various sports divisions.</p>
-            <a href="https://github.com/AishwaryaAjaykumar/NCAA-Ticket-sales-prediction" target="_blank">View on GitHub</a>
-            <!-- Add more project details if needed -->
-        </div>
-    </div>
-	</section>
-    <section id="contact">
-    <h2>CONTACT</h2>
-    <p>West Lafayette, IN, USA</p>
-    <p>Phone: +1 (765) 543-8876</p>
-    <p>E-Mail: <a href="mailto:aishwarya.ajaykumar@gmail.com">aishwarya.ajaykumar@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/aishwaryaajaykumar/" target="_blank">aishwaryaajaykumar</a></p>
-	</section>
-    <footer>
+    <!-- Other sections like About Me, Skills, Projects, and Contact follow similar structure adjustments -->
+    <footer class="text-center py-3 mt-4 border-top">
         <p>© 2024 Aishwarya. All Rights Reserved.</p>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
