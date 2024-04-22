@@ -119,7 +119,9 @@ section:nth-of-type(even) {
     flex: 1 1 45%; /* Flex-grow, flex-shrink, flex-basis */
     padding: 20px;
 }
-
+#about a:link, #about a:visited {
+    color: #654321; /* Replace with your desired link color */
+}
 .about-image img {
     width: 100%;
     max-width: 250px;
